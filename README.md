@@ -40,7 +40,7 @@ http://localhost/seu-repositorio/atividade01/
 <br>✔️ Orientação a Objetos (POO)
 <br>✔️ Conexão com banco de dados
 <br>✔️ Sessões e Cookies
-✔️ Boas práticas e organização de código
+<br>✔️ Boas práticas e organização de código
 
 📝 Objetivo
 
@@ -49,5 +49,5 @@ Este repositório tem como finalidade:
 🎯 Praticar os conceitos estudados em aula
 <br>📁 Organizar minhas atividades de forma clara e acessível
 <br>💡 Criar uma base para futuros projetos em PHP
-🚀 Evoluir continuamente como desenvolvedor
+<br>🚀 Evoluir continuamente como desenvolvedor
 </div>
