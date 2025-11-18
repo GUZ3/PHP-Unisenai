@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.texto {
+    padding-top: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(4, 187, 19);
+}
+
+p {
+    font-size: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    height: 20px;
+    width: 100%;
+}
+
+.botao input {
+    background-color: rgb(4, 187, 19);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+

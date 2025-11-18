@@ -1,0 +1,56 @@
+.resultado {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: clamp(300px, 80%, 600px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.resultado h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #097296;
+}
+
+.resultado hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.lista-produtos {
+    list-style: none;
+    padding: 0;
+}
+
+.item-produto {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 18px;
+}
+
+.item-produto:last-child {
+    border-bottom: none;
+}
+
+.nome-produto {
+    flex-grow: 1; 
+    color: #333;
+    padding: 0 10px;
+}
+
+.preco-produto {
+    font-weight: bold;
+    color: green;
+    min-width: 120px; 
+    text-align: right;
+}
+
+.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

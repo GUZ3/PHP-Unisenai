@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    text-align: left;
+}
+
+/* Corpo da página */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Seção central */
+section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* Campos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campo de senha */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #2575fc;
+}
+
+/* Botões */
+input[type="reset"],
+input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type="submit"] {
+    background-color: #2575fc;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b5fd6;
+}
+
+input[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #b3b3b3;
+}

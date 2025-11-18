@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="valida.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <section>
+        <form action="processa.php" method="post" onsubmit="return validaProduto()">
+            <div class="input1">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira o nome do produto">
+            </div>
+            
+            <div class="input1">
+                <label for="preco">Preço (Ex: 19.99):</label>
+                <input type="text" id="preco" name="preco" placeholder="Use ponto para centavos">
+                <p id="erroPreco" class="erro"></p> 
+            </div>
+            
+            <div class="botao">
+                <input type="reset" value="Limpar">
+                <input class="enviar" type="submit" value="Adicionar Produto">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

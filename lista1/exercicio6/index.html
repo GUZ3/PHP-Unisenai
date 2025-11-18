@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="valida.js"></script> 
+</head>
+<body>
+    <h1>Contador de Palavras</h1>
+
+    <section>
+        <form action="processa.php" method="post" id="form-texto" onsubmit="return validarFormulario()"> 
+
+            <label for="texto">Digite seu texto aqui:</label>
+            <textarea id="texto" name="texto" placeholder="Digite seu texto..." oninput="contador()"></textarea> 
+
+            <div id="resultado-js" class="contador-js"></div> 
+
+            <div class="botao">
+                <input type="reset" value="Limpar" onclick="document.getElementById('resultado-js').innerHTML = ''"> 
+
+                <input class="enviar" type="submit" value="Analisar Texto"> 
+            </div>
+
+        </form>
+    </section>
+
+</body>
+</html>

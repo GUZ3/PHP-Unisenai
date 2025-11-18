@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="valida.js"></script>
+</head>
+<body>
+    <section>
+
+        <form action="processa.php" method="get" onsubmit="return valida()">
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" name="senha" placeholder="Insira sua senha">
+            <p>*Deve conter no minímo 8 letras</p>
+            <p>*Conter ao menos 1 número</p>
+            <p>*Conter uma letra maiúscula</p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

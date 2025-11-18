@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/validaForm.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Welcome!</title>
+</head>
+<body>
+    
+    <section class="form-boasVindas">
+
+        
+        <div class="img-form">
+            <img src="assets/img/joia.webp" alt="Bem-vindo">
+        </div>
+
+        <div class="form">
+            <form action="processa.php" method="post" onsubmit="return validaForm()">
+                <h1>Seja Bem-vindo!</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="name" placeholder="Insira o seu nome">
+            <br>
+            <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+            
+
+    </section>
+
+</body>
+</html>

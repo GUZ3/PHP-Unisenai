@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador personalizado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="valida.js"></script>
+</head>
+<body>
+    <section> 
+
+        <div class="texto">
+            <h1>Contador personalizado</h1>
+            <p>Insira um número para iniciar e outro de fim.</p>
+        </div>
+
+        <form action="processa.php" method="post" onsubmit="return valida()">
+
+            <label for="num1">Número ínicio:</label><br>
+            <input type="number" id="num1" name="num1" placeholder="Insira o número de começo"><br><br>
+
+            <label for="num2">Número Final:</label><br>
+            <input type="number" id="num2" name="num2" placeholder="Insira o número de Fim"><br><br>
+
+        <div class="botao">
+            <input type="reset">
+            <input type="submit">
+        </div>
+
+        </form>
+
+    </section>
+
+</body>
+</html>

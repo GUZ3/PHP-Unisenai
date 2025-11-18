@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de notas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="valida.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Médias</h1>
+
+    <section>
+
+        <form action="processa.php" method="post" onsubmit="return valida()">
+
+            <div class="input1">
+                <label for="num1">Nota 1:</label>
+                <input type="number" id="num1" name="num1" placeholder="Primeira Nota">
+            </div>
+
+            <div class="input2">
+                <label for="num2">Nota 2:</label>
+                <input type="number" id="num2" name="num2" placeholder="Segunda Nota">
+            </div>
+            
+            <div class="input3">
+                <label for="num3">Nota 3:</label>
+                <input type="number" id="num3" name="num3" placeholder="Terceira Nota">
+            </div>
+            
+            <div class="input4">
+                <label for="num4">Nota 4:</label>
+                <input type="number" id="num4" name="num4" placeholder="Quarta Nota">
+            </div>
+
+            <div class="botao">
+
+                <input type="reset" value="Limpar">
+                <input class="enviar" type="submit">
+                
+            </div>
+
+        </form>
+
+    </section>
+</body>
+</html>

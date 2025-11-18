@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.form-boasVindas {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-boasVindas h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    color: blue;
+}
+
+.form-boasVindas img {
+    width: 400px;
+    height: 300px;
+}
+
+.form-boasVindas form {
+    
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form-boasVindas form label {
+    margin: 5px 0 ;
+
+}
+
+.form {
+    
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+button {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
