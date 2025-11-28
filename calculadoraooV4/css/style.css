@@ -1,0 +1,70 @@
+:root{
+    --bg:#f7f6fb;
+    --card:#fff;
+    --accent:#2b6cb0;
+    --muted:#667;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: inter, system-ui, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg);
+    color: #222;
+}
+
+.container{
+    max-width: 520px;
+    margin:48px auto;
+    padding: 24px;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(20,20,40,0,0.06);
+}
+
+h1{
+    margin: 0,0,18px;
+    font-size: 22px;
+}
+
+.field{
+    margin-bottom: 6px;
+}
+
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+input[type=text],select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.actions{
+    display: flex;
+    gap: 8px;
+}
+
+button{
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--accent);
+    color:#ddd;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--muted);
+}

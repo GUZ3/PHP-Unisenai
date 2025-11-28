@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         switch($operacao){
             case 'somar':
-                $result= $result= $calcoper -> somar($val1, $val2);
+                $result= $calcoper -> somar($val1, $val2);
             break;
 
             case 'subtrair':
-                $result= $result= $calcoper -> subtrair($val1, $val2);
+                $result= $calcoper -> subtrair($val1, $val2);
             break;
 
             case 'multiplicar':
