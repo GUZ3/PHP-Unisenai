@@ -4,8 +4,8 @@ require_once 'IOperacao.php';
 
 abstract class Operacoes implements IOperacao{
 
-    private float $num1;
-    private float $num2;
+    protected float $num1;
+    protected float $num2;
 
     public function getNum1(): float{
         return $this->num1;

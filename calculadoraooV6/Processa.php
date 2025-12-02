@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $result = null;
     $error = null;
-    
-    $oper= null;
+
+    $oper = null;
 
     //verifica se há erro de entrada ou de operacão
 
@@ -31,33 +31,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         switch ($operacao) {
             case 'somar':
                 $oper = new Soma();
-            break;
+                break;
 
             case 'subtrair':
                 $oper = new Subtrair();
-            break;
+                break;
 
             case 'multiplicar':
                 $oper = new Multiplicar();
-            break;
+                break;
 
             case 'dividir':
                 if ($val2 == 0) {
                     $error = 'Não é permitido divisão por zero!';
-                break;
                 } else {
-                    $divisao = new Dividir();
+                    $oper = new Dividir();
                 }
 
                 break;
 
-        $oper->setNum1($val1);
-        $oper->setNum2($val2);
-        $result= $oper->calcula();
-        echo $result;
+
 
             default:
                 $error = 'Operação desconhecida';
+        }
+        if ($error === null && $oper !== null) {
+            $oper->setNum1($val1);
+            $oper->setNum2($val2);
+            $result = $oper->calcula();
         }
     }
     TrataeMostra::exibirResultado($error, $operacao, $val1, $val2, $result);
