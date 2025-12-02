@@ -1,5 +1,9 @@
 <?php
 
+require_once 'IOperacao.php';
+
+require_once 'IOperacao.php';
+
 final class Subtrair implements IOperacao{
 
     private float $num1;
