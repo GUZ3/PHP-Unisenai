@@ -5,6 +5,7 @@ require_once 'Soma.php';
 require_once 'Subtrair.php';
 require_once 'Multiplicar.php';
 require_once 'Dividir.php';
+require_once 'IOperacao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

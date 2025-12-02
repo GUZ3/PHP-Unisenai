@@ -1,7 +1,5 @@
 <?php
 
-    require_once 'IOperacao.php';
-
 final class Multiplicar implements IOperacao{
 
     private float $num1;
