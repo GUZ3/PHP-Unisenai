@@ -1,7 +1,5 @@
 <?php
 
-require_once 'IOperacao.php';
-
 interface IOperacao{
 
     public function setNum1(float $num1): void;
