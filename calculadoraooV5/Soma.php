@@ -1,5 +1,7 @@
 <?php
 
+require_once 'IOperacao.php';
+
 final class Soma implements IOperacao{
 
     private float $num1;
